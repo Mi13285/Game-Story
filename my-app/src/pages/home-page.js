@@ -53,7 +53,7 @@ const GAMES = [
       "Tom Clancy's Rainbow Six Осада – это продолжение нашумевшего шутера от первого лица, разработанного студией Ubisoft Montreal.",
   },
   {
-    image: "/game-covers/assassins_creed_valhalla.png",
+    image: require("../assets/image/assassins_creed_valhalla (1).png"),
     title: "Assassin’s Creed Valhalla",
     genres: ["Паркур", "РПГ", "Открытый мир"],
     video: "https://www.youtube.com/embed/ssrNcwxALS4",
