@@ -13,7 +13,7 @@
 }
 
 .header__store-title {
-    color: rgb(32, 29, 29);
+    color: rgb(26, 24, 24);
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
@@ -21,5 +21,5 @@
 
 .header__cart-btn-wrapper {
     justify-content: flex-end;
-    color: black;
+    color: rgb(168, 14, 14);
 }
