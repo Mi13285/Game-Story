@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { CartMenu } from "../cart-menu";
+import { ItemsInCart } from "../items-in-cart";
 import "./cart-block.css";
 import { ShoppingCart } from "lucide-react";
 import { calcTotalPrice } from "../utils";
@@ -10,6 +11,7 @@ export const CartBlock = () => {
   const totalPrice = calcTotalPrice(items);
   return (
     <div className="cart-block">
+      <ItemsInCart quantity={items.length} />
       <ShoppingCart
         size={25}
         className="cart-block__icon"
