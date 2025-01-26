@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Header } from "./components/header/header";
-import { HomePage } from "./pages/home-page";
-// import { GamePage } from "./pages/game-page";
+import { Header } from "../components/header/header";
+import { HomePage } from "../pages/home-page";
+import { GamePage } from "../pages/game-page";
 import { Provider } from "react-redux";
-import { store } from "./redux";
+import { store } from "./cart/games";
 
 function App() {
   return (
@@ -12,9 +12,10 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route exact path="/app/:title"></Route>
-            {/* <Route index element={<GamePage />} /> */}
+            <Route exact path="/"></Route>
             <Route index element={<HomePage />} />
+            <Route exact path="/app/:title"></Route>
+            <Route index element={<GamePage />} />
           </Routes>
         </div>
       </BrowserRouter>
