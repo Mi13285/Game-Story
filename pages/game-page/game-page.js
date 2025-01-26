@@ -4,17 +4,13 @@ import { GameCover } from "../../components/game-cover/game-cover";
 import { GameBuy } from "../../components/game-buy";
 import { GameGenre } from "../../components/game-genre";
 import "./game-page.css";
-import { useParams } from "react-router";
-import { GAMES } from "../data";
 
 export const GamePage = () => {
-  // const game = useSelector((state) => state.games.currentGame);
-
-  const {id} = useParams();
-
-  const game = GAMES.find(el => el.id.toString()===id);
+  const game = useSelector((state) => state.games.currentGame);
+  console.log('asda1', game);
   
   if (!game) return <>123123</>;
+  console.log("game", game);
   return (
     <div className="game-page">
       <h1 className="game-page__title">{game.title}</h1>

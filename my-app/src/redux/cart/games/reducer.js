@@ -13,4 +13,4 @@ const gamesSlice = createSlice({
 });
 
 export const { setCurrentGame } = gamesSlice.actions;
-export default gamesSlice.reducer;
+export const gamesReducer = gamesSlice.reducer;
