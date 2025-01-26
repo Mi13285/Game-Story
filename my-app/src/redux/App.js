@@ -14,8 +14,8 @@ function App() {
           <Routes>
             <Route exact path="/"></Route>
             <Route index element={<HomePage />} />
-            <Route exact path="/app/:title"></Route>
             <Route index element={<GamePage />} />
+            <Route exact path="/app/:title"></Route>
           </Routes>
         </div>
       </BrowserRouter>

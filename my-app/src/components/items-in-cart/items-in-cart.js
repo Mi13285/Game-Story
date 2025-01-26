@@ -8,4 +8,3 @@ export const ItemsInCart = ({ quantity = 0 }) => {
     ) : null;
   }
 };
-export default ItemsInCart;
