@@ -10,11 +10,11 @@ import { GAMES } from "../data";
 export const GamePage = () => {
   // const game = useSelector((state) => state.games.currentGame);
 
-  const {id} = useParams();
+  const { id } = useParams();
 
-  const game = GAMES.find(el => el.id.toString()===id);
-  
-  if (!game) return <>123123</>;
+  const game = GAMES.find((el) => el.id.toString() === id);
+
+  if (!game) return <p>Нет такой игры</p>;
   return (
     <div className="game-page">
       <h1 className="game-page__title">{game.title}</h1>

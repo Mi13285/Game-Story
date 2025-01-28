@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
+import { OrderPage } from "../pages/order-page";
 import { Header } from "../components/header/header";
 import { HomePage } from "../pages/home-page";
 import { GamePage } from "../pages/game-page";
@@ -14,7 +15,7 @@ function App() {
           <Routes>
             <Route exact path="/"></Route>
             <Route index element={<HomePage />} />
-            {/* <Route index element={<GamePage />} /> */}
+            <Route exact path="/order" element={<OrderPage />}></Route>
             <Route exact path="/app/:id" element={<GamePage />}></Route>
           </Routes>
         </div>
